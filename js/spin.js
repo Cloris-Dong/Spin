@@ -42,6 +42,3 @@ function draw() {
      // triangle(0, 0, distribution[i], 0,0,0);
    }
  }
-
-  // background(val, 100, 100, 1);
-// }
