@@ -26,15 +26,14 @@ function setup() {
   for (let i = 0; i < slider.value(); i++) {
      distribution[i] = floor(randomGaussian(width/5, width/4));
    }
-  frameRate(slider1.value());
  }
 
 function draw() {
   background('#99CC99');
+  frameRate(slider1.value() + 5);
   translate(width / 2 , height / 2 + 20);
   for (let i = 0; i < slider.value(); i++) {
      rotate(TWO_PI / slider.value());
-     // stroke(0);
      noFill();
      stroke('#f753db');
      // bezier(0, 0, distribution[i], random(0, 500), random(0, 300), 0, distribution[i], 0, 0, 0, 0, distribution[i]);
