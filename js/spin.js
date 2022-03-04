@@ -31,6 +31,10 @@ function setup() {
 function draw() {
   background('#99CC99');
   frameRate(slider1.value() + 5);
+  // if include the fr in setup(), its only going to run once
+    // and hence the value could not be changed by the slider.
+  // +5 as a the lowest fr rather than 0 so draw() won't be stopped after sliding to 0.
+    // also, +5 gives better visual effect; smoother.
   translate(width / 2 , height / 2 + 20);
   for (let i = 0; i < slider.value(); i++) {
      rotate(TWO_PI / slider.value());
@@ -38,6 +42,5 @@ function draw() {
      stroke('#f753db');
      // bezier(0, 0, distribution[i], random(0, 500), random(0, 300), 0, distribution[i], 0, 0, 0, 0, distribution[i]);
      arc(0, 0, distribution[i], random(0, 400), 0, TWO_PI);
-     // triangle(0, 0, distribution[i], 0,0,0);
    }
  }
