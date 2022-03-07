@@ -44,3 +44,7 @@ function draw() {
      arc(0, 0, distribution[i], random(0, 400), 0, TWO_PI);
    }
  }
+
+function windowResized() {
+ resizeCanvas(windowWidth, windowHeight);
+}
