@@ -10,12 +10,14 @@ function setup() {
   button.position (10,10);
   colorMode(HSB);
   slider = createSlider(0, 360, 180);
-  slider.position(110, 10);
+  slider.position(110, 15);
   slider.style('width', '200px');
+  slider.class("slider")
   slider1 = createSlider(0, 60, 10);
-  slider1.position (195, 85);
+  slider1.position (195, 90);
   slider1.style('width', '200px');
-  let p = createP('Are you running around in circles? / 你在忙着什么转呢？');
+  slider1.class("slider")
+  let p = createP('Are you running in circles? / 你在忙着什么转呢？');
   p.style('font-size', '20px');
   p.style('font-family', 'Courier New');
   p.position(10, 20);
@@ -48,3 +50,4 @@ function draw() {
 function windowResized() {
  resizeCanvas(windowWidth, windowHeight);
 }
+//this is to readjust the window when refresh is not pressed;

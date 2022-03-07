@@ -5,8 +5,31 @@
 html, body {
   margin: 0;
   padding: 0;
+  /* overflow: hidden; */
+  /* a quick solution to open the page w/o scroll bar even when it is small. */
+  /* position: relative; */
+  /* width: 100%;
+  height: 100%; */
+  border: 0;
 }
 
 canvas {
   display: block;
+}
+
+.slider{
+  -webkit-appearance: none;
+  height: 8px;
+  background: #ff66c4;
+  border-radius: 100px;
+}
+
+.slider::-moz-range-progress {
+  background-color: #ff66c4;
+}
+
+.slider::-moz-range-track {
+  background-color: #5E5E5E;
+  border: 0;
+  outline: none;
 }
