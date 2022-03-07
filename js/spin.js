@@ -14,7 +14,7 @@ function setup() {
   p.position(10, 0);
   slider = createSlider(0, 360, 180);
   slider.position(80, 54);
-  slider.style('width', '130px');
+  slider.style('width', '120px');
   slider.style('height', '10px');
   slider.class("slider")
   slider1 = createSlider(0, 60, 10);
@@ -24,11 +24,11 @@ function setup() {
   let p1 = createP('Are you running in circles? / 你在忙着什么转呢？');
   p1.style('font-size', '20px');
   p1.style('font-family', 'Courier New');
-  p1.position(10, 70);
+  p1.position(10, 84);
   let p2 = createP('At what speed?');
   p2.style('font-size', '20px');
   p2.style('font-family', 'Courier New');
-  p2.position(10, 130);
+  p2.position(10, 135);
   for (let i = 0; i < slider.value(); i++) {
      distribution[i] = floor(randomGaussian(width/5, width/4));
    }
