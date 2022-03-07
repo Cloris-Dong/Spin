@@ -6,25 +6,29 @@ let distribution = new Array(360);
 function setup() {
   createCanvas(innerWidth, innerHeight)
   background(255)
-  button = createButton(":) try sliding");
-  button.position (10,10);
+  textStyle(BOLD);
   colorMode(HSB);
+  let p = createP('01');
+  p.style('font-size', '40px');
+  p.style('font-family', 'Courier New');
+  p.position(10, 0);
   slider = createSlider(0, 360, 180);
-  slider.position(110, 15);
-  slider.style('width', '200px');
+  slider.position(80, 54);
+  slider.style('width', '130px');
+  slider.style('height', '10px');
   slider.class("slider")
   slider1 = createSlider(0, 60, 10);
-  slider1.position (195, 90);
-  slider1.style('width', '200px');
+  slider1.position (200, 155);
+  slider1.style('width', '140px');
   slider1.class("slider")
-  let p = createP('Are you running in circles? / 你在忙着什么转呢？');
-  p.style('font-size', '20px');
-  p.style('font-family', 'Courier New');
-  p.position(10, 20);
-  let p1 = createP('At what speed?');
+  let p1 = createP('Are you running in circles? / 你在忙着什么转呢？');
   p1.style('font-size', '20px');
   p1.style('font-family', 'Courier New');
-  p1.position(10, 65);
+  p1.position(10, 70);
+  let p2 = createP('At what speed?');
+  p2.style('font-size', '20px');
+  p2.style('font-family', 'Courier New');
+  p2.position(10, 130);
   for (let i = 0; i < slider.value(); i++) {
      distribution[i] = floor(randomGaussian(width/5, width/4));
    }
