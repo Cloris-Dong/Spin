@@ -13,7 +13,7 @@ function setup() {
   p.style('font-family', 'Courier New');
   p.position(10, 0);
   slider = createSlider(0, 360, 180);
-  slider.position(80, 54);
+  slider.position(75, 54);
   slider.style('width', '120px');
   slider.style('height', '10px');
   slider.class("slider")
