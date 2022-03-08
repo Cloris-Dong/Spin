@@ -9,11 +9,13 @@ function setup() {
   textStyle(BOLD);
   colorMode(HSB);
   let p = createP('01');
-  p.style('font-size', '40px');
+  p.style('font-size', '45px');
   p.style('font-family', 'Courier New');
+  // p.style('font-weight', 'bold');
+  p.style('font-style', 'Italic');
   p.position(10, 0);
   slider = createSlider(0, 360, 180);
-  slider.position(80, 54);
+  slider.position(80, 60);
   slider.style('width', '120px');
   slider.style('height', '10px');
   slider.class("slider")
